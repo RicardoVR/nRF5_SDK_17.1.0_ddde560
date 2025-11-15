@@ -61,10 +61,22 @@
   #include "pca10031.h"
 #elif defined(BOARD_PCA10036)
   #include "pca10036.h"
+#elif defined(pca10040_8CH_rfm95)
+  #include "pca10040_8CH_rfm95.h"
 #elif defined(BOARD_PCA10040)
   #include "pca10040.h"
+#elif defined(BOARD_PCA10056_BT840x)
+  #include "pca10056_840BT.h"
+#elif defined(BOARD_PCA10056_test)
+  #include "pca10056_test.h"
+#elif defined(BOARD_PCA1004_GOLILLA)
+  #include "pca10040_GOLILLA.h"
+#elif defined(BOARD_PCA1004_GOLILLA2)
+  #include "pca10040_GOLILLA2.h"  //ADS1232 usando libreria de hx711
 #elif defined(BOARD_PCA10056)
   #include "pca10056.h"
+#elif defined(BOARD_PCA10056_8adc)
+  #include "pca10056-8adc.h"
 #elif defined(BOARD_PCA10100)
   #include "pca10100.h"
 #elif defined(BOARD_PCA10112)
@@ -73,8 +85,12 @@
   #include "pca20020.h"
 #elif defined(BOARD_PCA10059)
   #include "pca10059.h"
+#elif defined(BOARD_PCA10059_PABLO)
+  #include "pca10059_pablo.h"
 #elif defined(BOARD_WT51822)
   #include "wt51822.h"
+#elif defined(HOLY_REPEATER)
+  #include "HOLY_REPEATER.h"
 #elif defined(BOARD_N5DK1)
   #include "n5_starterkit.h"
 #elif defined (BOARD_D52DK1)
@@ -85,6 +101,24 @@
   #include STRINGIFY(CUSTOM_BOARD_INC.h)
 #elif defined(BOARD_CUSTOM)
   #include "custom_board.h"
+#elif defined(BOARD_PCA10040_PERNO_V2)
+  #include "pca10040_PERNO_V2.h"
+
+
+#elif defined(BOARD_PCA10040_Test)
+  #include "pca10040_test_nrf52832_Board.h"
+
+  
+#elif defined(BOARD_Tega_V3)
+  #include "pca10056_PERNO_V3.h"
+#elif defined(BOARD_PCA10040_PERNO_V3_1)
+  #include "pca10040_PERNO_V3.h"  // MCU holyiot pa + adc 8ch
+#elif defined(pca10056_TEGA_LIFTER)
+  #include "pca10056_TEGA_LIFTER.h"  // MCU holyiot pa + adc 8ch
+
+
+
+
 #else
 #error "Board is not defined"
 
