@@ -75,6 +75,8 @@
   #include "pca10040_GOLILLA2.h"  //ADS1232 usando libreria de hx711
 #elif defined(BOARD_PCA10056)
   #include "pca10056.h"
+#elif defined(BOARD_PCA10056_IDLER)
+  #include "pca10056_IDLER.h"
 #elif defined(BOARD_PCA10056_8adc)
   #include "pca10056-8adc.h"
 #elif defined(BOARD_PCA10100)
