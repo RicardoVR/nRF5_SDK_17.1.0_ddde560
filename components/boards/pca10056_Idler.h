@@ -90,6 +90,7 @@ typedef struct {
 #define ADC3                    NRF_SAADC_INPUT_AIN2                    //  AIN2  Voltaje Generador
 #define ADC4                    NRF_SAADC_INPUT_AIN3                    //  AIN1  Voltaje Bateria
 
+
 #define BUTTONS_NUMBER          2
 
 #define RPM_Signal              NRF_GPIO_PIN_MAP(0,17)                  //  Recibe punsos de RPM del comparador

@@ -105,7 +105,7 @@ ret_code_t drv_rtc_init(drv_rtc_t const * const  p_instance,
     m_cb[p_instance->instance_id].p_instance = p_instance;
 
     err_code = NRF_SUCCESS;
-    NRF_LOG_INFO("RTC: initialized.");
+    NRF_LOG_RAW_INFO("RTC: initialized. \r\n");
     return err_code;
 }
 
@@ -127,7 +127,7 @@ void drv_rtc_uninit(drv_rtc_t const * const p_instance)
     nrf_rtc_int_disable(p_instance->p_reg, mask);
 
     m_cb[p_instance->instance_id].state = NRFX_DRV_STATE_UNINITIALIZED;
-    NRF_LOG_INFO("RTC: Uninitialized.");
+    NRF_LOG_RAW_INFO("RTC: Uninitialized.");
 }
 
 void drv_rtc_start(drv_rtc_t const * const p_instance)
